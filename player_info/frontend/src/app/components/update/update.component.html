@@ -1,0 +1,48 @@
+<div class="container-fluid" style="text-align: center; margin-top: 50px;">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div style="text-align: center;"><h2>INDIA</h2></div>
+           <table class="table table-striped table-inverse table-responsive">
+            <thead class="thead-inverse">
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>T20 Runs</th>
+                    <th>ODI Runs</th>
+                    <th>Test Runs</th>
+                    <th>Wickets</th>
+                    <th>Highest Score</th>
+                    <th>Debut</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let player of players">
+                        <td >
+                            <img style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" src = 'https://th.bing.com/th/id/OIP.3knXDbc2lhq_qfMS9lpUWQHaEK?w=330&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7' >
+                        </td>
+                        <td>{{player.name}}</td>
+                        <td>{{player.age}}</td>
+                        <td>{{player.t20Runs}}</td>
+                        <td>{{player.odiRuns}}</td>
+                        <td>{{player.testRuns}}</td>
+                        <td>{{player.wickets}}</td>
+                        <td>{{player.highestScore}}</td>
+                        <td>{{player.debut | extractDate}}</td>
+                        <td>
+                            <button class="btn btn-warning" routerLink="/edit/{{player.id}}">Update</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" (click) = "deletePlayer(player.id)">Delete</button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+           </table>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+            </p>
+        </div>
+    </div>
+</div>

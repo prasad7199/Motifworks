@@ -1,0 +1,50 @@
+<div class="container-fluid" style="text-align: center;">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" style="width: 500px;">
+            <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" name = "name" class="form-control" id="name" placeholder="name" [(ngModel)] = "name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="text" name = "age" class="form-control" id="age" placeholder="age" [(ngModel)] = "age">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="t20Runs" class="form-label">T20 Runs</label>
+                    <input type="text" name = "t20Runs" class="form-control" id="t20Runs" placeholder="t20Runs" [(ngModel)] = "t20Runs">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="odiRuns" class="form-label">ODI Runs</label>
+                    <input type="text" name = "odiRuns" class="form-control" id="odiRuns" placeholder="odiRuns" [(ngModel)] = "odiRuns">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="testRuns" class="form-label">Test Runs</label>
+                    <input type="text" name = "testRuns" class="form-control" id="testRuns" placeholder="testRuns" [(ngModel)] = "testRuns">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="highestScore" class="form-label">Highest Score</label>
+                    <input type="text" name = "highestScore" class="form-control" id="highestScore" placeholder="highestScore" [(ngModel)] = "highestScore">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="wickets" class="form-label">Wickets</label>
+                    <input type="text" name = "wickets" class="form-control" id="wickets" placeholder="wickets" [(ngModel)] = "wickets">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="debut" class="form-label">Debut</label>
+                    <input type="date" name = "debut" class="form-control" id="debut" placeholder="debut" [(ngModel)] = "debut">
+                  </div>
+                
+                <button type="submit" class="btn btn-primary" (click) = "onSubmit()">Submit</button>
+              </form>
+        </div>
+    </div>
+    
+</div>
