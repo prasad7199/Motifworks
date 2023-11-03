@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Player_Info.props" />
+</Project>
